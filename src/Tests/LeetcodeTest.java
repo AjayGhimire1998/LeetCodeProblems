@@ -18,7 +18,7 @@ public class LeetcodeTest extends TestCase {
 		assertEquals(false, PalindromeNumber.isPalindrome(-121));
 	}
 
-	public void testrRomanToInteger() {
+	public void testRomanToInteger() {
 		assertEquals(3, RomanToInteger.romanToInt("III"));
 		assertEquals(1994, RomanToInteger.romanToInt("MCMXCIV"));
 	}
