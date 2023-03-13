@@ -1,6 +1,7 @@
 package Tests;
 
 import PlalindromeNumber.PalindromeNumber;
+import RomanToInteger.RomanToInteger;
 import junit.framework.TestCase;
 
 public class LeetcodeTest extends TestCase {
@@ -17,7 +18,8 @@ public class LeetcodeTest extends TestCase {
 		assertEquals(false, PalindromeNumber.isPalindrome(-121));
 	}
 
-//	public void testrRomanToInteger() {
-//		assertEquals(false, false);
-//	}
+	public void testrRomanToInteger() {
+		assertEquals(3, RomanToInteger.romanToInt("III"));
+		assertEquals(1994, RomanToInteger.romanToInt("MCMXCIV"));
+	}
 }
