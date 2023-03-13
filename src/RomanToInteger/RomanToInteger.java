@@ -3,57 +3,42 @@ package RomanToInteger;
 public class RomanToInteger {
 
 	public static void main(String[] args) {
-		System.out.println(romanToInt("I"));
+		System.out.println(romanToInt("XII"));
 	}
 
 	public static int romanToInt(String s) {
 		int result = 0;
 
 		for (int i = 0; i < s.length(); i++) {
-			if (s.charAt(i) == 'I') {
-				if (s.charAt(i + 1) == 'V' || s.charAt(i + 1) == 'X') {
+			char c = s.charAt(i);
+			if (c == 'I') {
+				if (i + 1 < s.length() && (s.charAt(i + 1) == 'V' || s.charAt(i + 1) == 'X')) {
 					result -= 1;
-					i++;
 				} else {
 					result += 1;
 				}
-			}
-
-			if (s.charAt(i) == 'V') {
+			} else if (c == 'V') {
 				result += 5;
-			}
-
-			if (s.charAt(i) == 'X') {
-				if (s.charAt(i + 1) == 'L' || s.charAt(i + 1) == 'C') {
+			} else if (c == 'X') {
+				if (i + 1 < s.length() && (s.charAt(i + 1) == 'L' || s.charAt(i + 1) == 'C')) {
 					result -= 10;
-					i++;
-
 				} else {
 					result += 10;
 				}
 
-			}
-
-			if (s.charAt(i) == 'L') {
+			} else if (c == 'L') {
 				result += 50;
-			}
-
-			if (s.charAt(i) == 'C') {
-				if (s.charAt(i + 1) == 'D' || s.charAt(i + 1) == 'M') {
+			} else if (c == 'C') {
+				if (i + 1 < s.length() && (s.charAt(i + 1) == 'D' || s.charAt(i + 1) == 'M')) {
 					result -= 100;
-					i++;
 
 				} else {
 					result += 100;
 				}
 
-			}
-
-			if (s.charAt(i) == 'D') {
+			} else if (c == 'D') {
 				result += 500;
-			}
-
-			if (s.charAt(i) == 'M') {
+			} else if (c == 'M') {
 				result += 1000;
 			}
 
