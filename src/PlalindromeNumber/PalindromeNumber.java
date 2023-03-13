@@ -7,6 +7,12 @@ public class PalindromeNumber {
 		System.out.println(isPalindrome(20092));
 	}
 
+	/**
+	 * Given an integer x, return true if x is a palindrome , and false otherwise.
+	 * 
+	 * @param x
+	 * @return true or false
+	 */
 	public static boolean isPalindrome(int x) {
 
 		String str = Integer.toString(x);
