@@ -1,5 +1,7 @@
 package PlusOne;
 
+import java.util.Arrays;
+
 /*
  * You are given a large integer represented as an integer array digits, where
  * each digits[i] is the ith digit of the integer. The digits are ordered from
@@ -12,24 +14,26 @@ package PlusOne;
 public class PlusOne {
 
 	public static void main(String[] args) {
-		int[] digits = { 1, 2, 3 };
-		System.out.println(plusOne(digits));
+		int[] digits = { 9 };
+		System.out.println(Arrays.toString(plusOne(digits)));
 	}
 
-	public static String plusOne(int[] digits) {
-		int[] result;
+	public static char[] plusOne(int[] digits) {
+		char[] result;
 		if (digits[digits.length - 1] == 9) {
-			result = new int[digits.length + 1];
+			result = new char[digits.length + 1];
 		} else {
-			result = new int[digits.length];
+			result = new char[digits.length];
 		}
 		String num = "";
 		int sum = 0;
 		for (int i = 0; i < digits.length; i++) {
 			num += Integer.toString(digits[i]);
 		}
-		num = 
-
-		return;
+		sum = Integer.parseInt(num) + 1;
+		for (int i = 0; i < Integer.toString(sum).length(); i++) {
+			result[i] = Integer.toString(sum).charAt(i);
+		}
+		return result;
 	}
 }
