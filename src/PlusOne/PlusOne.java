@@ -34,6 +34,8 @@ public class PlusOne {
 		for (int i = 0; i < Integer.toString(sum).length(); i++) {
 			result[i] = Integer.toString(sum).charAt(i);
 		}
+		System.out.println(result);
 		return result;
 	}
+
 }
