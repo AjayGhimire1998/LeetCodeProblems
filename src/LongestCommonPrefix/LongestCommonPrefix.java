@@ -3,11 +3,11 @@ package LongestCommonPrefix;
 public class LongestCommonPrefix {
 
 	public static void main(String[] args) {
-		String[] str = { "flooad", "flood", "flool" };
-		System.out.println(longestCommonPrefix(str));
+		String[] str = { "fload", "flood", "flool" };
+		System.out.println(longest(str));
 
-		String name = "Ajay";
-		System.out.println(name.indexOf("y"));
+//		String name = "Ajay";
+//		System.out.println(name.indexOf("y"));
 	}
 
 	public static String longestCommonPrefix(String[] strs) {
@@ -46,4 +46,18 @@ public class LongestCommonPrefix {
 //		return s;
 	}
 
+	public static String longest(String[] strs) {
+		if (strs == null && strs.length == 0) {
+			return "";
+		}
+
+		String temp = strs[0];
+
+		for (int i = 1; i < strs.length; i++) {
+			while (strs[i].indexOf(temp) != 0) {
+				temp = temp.substring(0, temp.length() - 1);
+			}
+		}
+		return temp;
+	}
 }
