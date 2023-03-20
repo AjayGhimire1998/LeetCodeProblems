@@ -4,7 +4,7 @@ public class PalindromeNumber {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(isPalindrome(20092));
+		System.out.println(isIt(20002));
 	}
 
 	/**
@@ -25,4 +25,15 @@ public class PalindromeNumber {
 		return true;
 	}
 
+	public static boolean isIt(int x) {
+
+		String param = Integer.toString(x);
+
+		for (int i = 0; i < param.length(); i++) {
+			if (param.charAt(i) != param.charAt(param.length() - 1 - i)) {
+				return false;
+			}
+		}
+		return true;
+	}
 }
