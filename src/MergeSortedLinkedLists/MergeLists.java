@@ -44,7 +44,7 @@ public class MergeLists {
 	}
 
 	public static void main(String[] args) {
-
+		System.out.println("Add a commit");
 	}
 
 }
