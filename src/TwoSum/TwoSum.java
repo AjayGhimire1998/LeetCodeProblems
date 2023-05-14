@@ -40,4 +40,11 @@ public class TwoSum {
 		return result;
 	}
 
+	public static int[] two2Sum(int[] nums, int target) {
+		int[] result = new int[2];
+
+		for (int i = 0; i < nums.length; i++) {
+
+		}
+	}
 }
