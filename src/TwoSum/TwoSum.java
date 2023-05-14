@@ -8,8 +8,9 @@ public class TwoSum {
 		// TODO Auto-generated method stub
 		int[] nums = { 3, 3 };
 		int[] nums2 = { 2, 7, 11, 15 };
-//		System.out.println(Arrays.toString(twoSum(nums, 6)));
-		System.out.println(Arrays.toString(two2Sum(nums, 6)));
+		System.out.println(Arrays.toString(twoSum(nums, 6)));
+		System.out.println(Arrays.toString(two2Sum(nums2, 18)));
+
 	}
 
 	/*
