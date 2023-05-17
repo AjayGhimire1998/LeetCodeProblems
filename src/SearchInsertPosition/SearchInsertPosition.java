@@ -70,7 +70,7 @@ public class SearchInsertPosition {
 				}
 			}
 		}
-
+		System.out.println(low);
 		return low;
 	}
 
